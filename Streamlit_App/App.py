@@ -15,7 +15,7 @@ MODEL_PATH = os.path.join(
 model = joblib.load(MODEL_PATH)
 
 
-model = joblib.load("../Model/random_forest_model.pkl")
+
 def set_background(image_path):
     with open(image_path, "rb") as img:
         encoded = base64.b64encode(img.read()).decode()
