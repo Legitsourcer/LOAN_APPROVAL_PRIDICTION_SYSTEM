@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 import base64
 # Load Model
-model = joblib.load("../Loan_Approval_Pridiction_System\Model\random_forest_model.pkl")
+model = joblib.load("../Model/random_forest_model.pkl")
 def set_background(image_path):
     with open(image_path, "rb") as img:
         encoded = base64.b64encode(img.read()).decode()
